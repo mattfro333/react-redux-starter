@@ -4,6 +4,7 @@ import path from 'path';
 import config from '../webpack.config.dev';
 import open from 'open';
 
+const mime=require('mime-types');
 const port = 3000;
 const app = express();
 const compiler = webpack(config);
@@ -23,6 +24,6 @@ app.listen(port, function(err) {
   if (err) {
     console.log(err);
   } else {
-    open('http://localhost:${port}');
+    open('http://localhost:3002');
   }
 });
