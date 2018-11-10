@@ -7,7 +7,11 @@
   "dependencies": {
     "babel-polyfill": "6.8.0",
     "bootstrap": "4.1.2",
+    "fresh": "^0.5.2",
+    "growl": "^1.10.5",
     "jquery": "3.0.0",
+    "mime": "^2.3.1",
+    "minimatch": "^3.0.4",
     "react": "15.0.2",
     "react-dom": "15.0.2",
     "react-redux": "4.4.5",
