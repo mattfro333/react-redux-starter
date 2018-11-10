@@ -4,6 +4,8 @@ import path from 'path';
 import config from '../webpack.config.dev';
 import open from 'open';
 
+/* eslint-disable no-console */
+
 const mime=require('mime-types');
 const port = 3000;
 const app = express();
@@ -24,6 +26,6 @@ app.listen(port, function(err) {
   if (err) {
     console.log(err);
   } else {
-    open('http://localhost:3002');
+    open(`http://localhost:${port}`);
   }
 });
