@@ -34,4 +34,5 @@ export default {
 
     ]
   }
+  // resolve: { extensions: ['', '.js', '.jsx','.css']}//add '.css' "root": __dirname }
 };
