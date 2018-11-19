@@ -15,6 +15,10 @@ class CoursesPage extends React.Component {
     this.setState({course: course });
   }
 
+  onClickSave() {
+    alert(`Saving ${this.state.course.title}`);
+  }
+
   render() {
     return (
       <div>
