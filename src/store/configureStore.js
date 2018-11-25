@@ -9,3 +9,4 @@ export function configureStore(initialState) {
     applyMiddleware(reduxImmutableStateInvariant())
   );
 }
+export default configureStore;
