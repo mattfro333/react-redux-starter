@@ -15,7 +15,7 @@ class CoursesPage extends React.Component {
   }
 
   onTitleChange(event) {
-    const course = this.stste.course;
+    const course = this.state.course;
     course.title = event.target.value;
     this.setState({course: course });
   }
