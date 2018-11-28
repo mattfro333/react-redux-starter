@@ -1,9 +1,8 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
-// import PropTypes from 'prop-types';
-// var PropTypes = require('prop-types');
+import PropTypes from 'prop-types';
 
 class ManageCoursePage extends React.Component {
   constructor(props, context) {
