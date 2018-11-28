@@ -18,7 +18,7 @@ class ManageCoursePage extends React.Component {
 }
 
 ManageCoursePage.PropTypes = {
-  id: React.Proptypes.string.isRequired
+  // courses: React.PropTypes.string.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
