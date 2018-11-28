@@ -1,6 +1,9 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
+import * as courseActions from '../../actions/courseActions';
+// import PropTypes from 'prop-types';
+// var PropTypes = require('prop-types');
 
 class ManageCoursePage extends React.Component {
   constructor(props, context) {
@@ -9,13 +12,13 @@ class ManageCoursePage extends React.Component {
 
   render() {
     return (
-
+      <h1>Manage Course</h1>
     );
   }
 }
 
 ManageCoursePage.PropTypes = {
-  //myProp: Proptypes.string.isRequired
+  myProp: React.Proptypes.string.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
@@ -26,7 +29,7 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators(actions, dispatch)
+    actions: bindActionCreators(courseActions, dispatch)
   };
 }
 
