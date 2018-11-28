@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+// var PropTypes = require('prop-types');
 
 class ManageCoursePage extends React.Component {
   constructor(props, context) {
@@ -17,7 +18,7 @@ class ManageCoursePage extends React.Component {
 }
 
 ManageCoursePage.PropTypes = {
-  myProp: React.Proptypes.string.isRequired
+  id: React.Proptypes.string.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
